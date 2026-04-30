@@ -1,0 +1,16 @@
+:root {
+    --primary-blue: #3b82f6;
+    --dark-blue: #1e293b;
+    --text-gray: #64748b;
+    --light-bg: #f8fafc;
+    --white: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: lightblue;
+}
