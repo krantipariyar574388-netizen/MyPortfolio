@@ -1,53 +1,409 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kranti Pariyar - Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     </head>
-
     <body>
-       <header>
-        <div class="logo">
-            <span class="logo-icon">K. </span>Kranti Pariyar
+        <header>
+            <div class="logo"><span class="logo-icon">K.</span> Kranti Pariyar</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="about" class="hero">
+        <div class="hero-content">
+          <span class="sub-title">ABOUT ME</span>
+          <h1>Hi, I'm <span>Kranti</span><br />Web Developer</h1>
+          <p>
+            I am a Computer Science student currently pursuing my Bachelor's
+            degree. My coding journey began with simple curiosity, which has now
+            evolved into a true passion for web development. I have built my
+            skills through hands-on experience, specializing in React for
+            dynamic user interfaces, JavaScript for core logic, and PHP for
+            secure backend solutions. I enjoy integrating real-time data through
+            APIs and focus on creating responsive designs that work seamlessly
+            on both mobile and desktop. I am dedicated to writing clean code and
+            solving digital problems with efficient solutions.
+          </p>
+          <div class="hero-btns">
+            <a href="RESUME" class="btn-primary"
+              ><i class="fas fa-download"></i> Download Resume</a
+            >
+            <a href="#contact" class="btn-link"
+              >Contact Me <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
         </div>
+        <div class="hero-image">
+          <div class="image-box">
+            <img src="myclz.jpg" alt="Kranti Pariyar" />
+          </div>
+          <div class="dot-pattern top-right"></div>
+          <div class="dot-pattern bottom-left"></div>
+        </div>
+      </section>
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-       </header>
+      <section class="stats-card">
+        <div class="stat-item">
+          <div class="stat-icon blue"><i class="far fa-smile"></i></div>
+          <h3>1+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon green"><i class="fas fa-briefcase"></i></div>
+          <h3>3+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon purple"><i class="fas fa-users"></i></div>
+          <h3>10+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon orange"><i class="fas fa-coffee"></i></div>
+          <h3>1000+</h3>
+          <p>Cups of Coffee</p>
+        </div>
+      </section>
 
-       <main class="container">
-        <section class="hero">
-            <div class="hero-content">
-                <span class="sub-title">ABOUT ME</span>
-                <h1>Hi, i'm <span> Kranti </span> <br>Frontend Web Developer</h1>
-                <p>I'm a passionate web developer who loves building clean, modern and user-friendly websites.
-                I also love solving logical problems and turning creative ideas into functional web applications.</p>
-                <div class="hero-btns">
-                    <a href="#" class="btn-primary"><i class="fas fa-download"></i>Download Resume</a>
-                    <a href="#" class="btn-link">Contact Me <i class="fas fa-arrow-right"></i></a></a>
-                </div>
+      <div class="two-column">
+        <section id="skills" class="card">
+          <h2>My Skills</h2>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span
+                ><i class="fab fa-html5" style="color: #e34c26"></i> HTML</span
+              >
+              <div class="progress-bar">
+                <div class="progress" style="width: 95%"></div>
+              </div>
+              <span class="percent">95%</span>
             </div>
-            <div class="hero-image">
-                <div class="image-box">
-                    <image src="myclz.jpg" alt="Kranti Pariyar" width="200px">
-                </div>
-                <div class="dot-pattern top-right"></div>
-                <div class="dot-pattern bottom-left"></div>
+            <div class="skill-item">
+              <span
+                ><i class="fab fa-css3-alt" style="color: #264de4"></i>
+                CSS</span
+              >
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+              <span class="percent">90%</span>
             </div>
+            <div class="skill-item">
+              <span
+                ><i class="fab fa-js" style="color: #f0db4f"></i>
+                JavaScript</span
+              >
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+              <span class="percent">85%</span>
+            </div>
+            <div class="skill-item">
+              <span
+                ><i class="fab fa-react" style="color: #61dbfb"></i>
+                React.js</span
+              >
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+              <span class="percent">80%</span>
+            </div>
+            <div class="skill-item">
+              <span
+                ><i class="fas fa-wind" style="color: #38bdf8"></i> Tailwind
+                CSS</span
+              >
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+              <span class="percent">85%</span>
+            </div>
+          </div>
         </section>
 
-       </main>
-    </body>
+        <section class="card">
+          <h2>My Interests</h2>
+          <div class="interests-grid">
+            <div class="interest-tag"><i class="fas fa-code"></i> Coding</div>
+            <div class="interest-tag">
+              <i class="fas fa-book-open"></i> Learning
+            </div>
+            <div class="interest-tag">
+              <i class="fas fa-headphones"></i> Music
+            </div>
+            <div class="interest-tag">
+              <i class="fas fa-camera"></i> Photography
+            </div>
+            <div class="interest-tag"><i class="fas fa-plane"></i> Travel</div>
+          </div>
+        </section>
+      </div>
+
+      <section id="projects" class="card">
+        <div class="section-title">
+          <span class="sub-title">MY WORK</span>
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-item">
+            <div class="project-img">
+              <img src="myclz.jpg" alt="News App Project" />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/KrantiPariyar/News-App"
+                  target="_blank"
+                  class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Global News App</h3>
+              <p>
+                Built with React and NewsAPI to fetch real-time global headlines
+                with state management.
+              </p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>API Integration</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-img">
+              <img src="images.jpg" alt="Todo App Project" />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/krantipariyar574388-netizen/TodoList"
+                  target="_blank"
+                  class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Task Manager</h3>
+              <p>
+                A Todo List application using React and LocalStorage for
+                persistent data management.
+              </p>
+              <div class="project-tech">
+                <span>TypeScript</span>
+                <span>LocalStorage</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-img">
+              <img src="note.jpg" alt="Note Sharing Project" />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/krantipariyar574388-netizen/Online-Note-Sharing"
+                  target="_blank"
+                  class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Online Note Sharing</h3>
+              <p>
+                A platform for creating and sharing digital notes efficiently
+                among users[cite: 1].
+              </p>
+              <div class="project-tech">
+                <span>Tailwind CSS</span>
+                <span>GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="two-column">
+        <section class="card">
+          <h2>My Values</h2>
+          <div class="value-item">
+            <div class="v-icon blue-bg"><i class="fas fa-code"></i></div>
+            <div>
+              <h4>Clean Code</h4>
+              <p>I write clean, maintainable and efficient code.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="v-icon green-bg"><i class="far fa-user"></i></div>
+            <div>
+              <h4>User First</h4>
+              <p>I build with the user experience in mind.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="v-icon purple-bg"><i class="fas fa-book"></i></div>
+            <div>
+              <h4>Continuous Learning</h4>
+              <p>I'm always learning and improving.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>My Journey</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2022</span>
+              <p>Started my web development journey</p>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2023</span>
+              <p>Built my first projects and freelanced</p>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2024</span>
+              <p>Worked with amazing clients</p>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2025</span>
+              <p>Continuing to build and grow 🚀</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="contact" class="card contact-section">
+        <div class="section-title">
+          <span class="sub-title">GET IN TOUCH</span>
+          <h2>Contact Me</h2>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="info-item">
+              <div class="v-icon blue-bg"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>krantipariyar08@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="v-icon green-bg"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p>+977 9822568875</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="v-icon purple-bg">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Sundhara, Kathmandu</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/kranti-pariyar-8b7376405"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/krantipariyar574388-netizen"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <form action="contact.php" method="POST" class="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" name="submit" class="btn-primary">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="simple-footer">
+      <div class="footer-container">
+        <div class="footer-socials">
+          <a
+            href="https://github.com/krantipariyar574388-netizen"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/kranti-pariyar-8b7376405"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/share/1BNwk73M9u/"
+            target="_blank"
+            title="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="kranti57_?igsh=MW01bHQxa3U0bDRlYQ=="
+            target="_blank"
+            title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+
+        <div class="footer-copyright">
+          <p>&copy; 2024 Kranti Pariyar. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+  </body>
 </html>
